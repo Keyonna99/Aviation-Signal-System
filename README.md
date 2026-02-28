@@ -49,8 +49,7 @@ AviationSignalSystem/
 ## ▶️ How you Will Run This Project
 
 ### 1️⃣ Clone the Repository
-git clone https://github.com/your-username/AviationSignalSystem.git  
-cd AviationSignalSystem
+git clone http: In Progress
 
 ### 2️⃣ Create and Activate Virtual Environment (Windows)
 python -m venv venv  
@@ -94,6 +93,10 @@ This project represents the early-stage engineering foundation of a scalable air
 ---
 
 LinkedIn:https://www.linkedin.com/in/ke-yonna-bass-b9a0663b3/
+
+--- 
+## Project in Progress
+--- 
 
 ## 👩🏽‍💻 Author
 Ke’Yonna Bass  
