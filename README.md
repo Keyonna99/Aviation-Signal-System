@@ -1,102 +1,65 @@
-# ✈️ Aviation Signal System (Simulation Prototype)
+✈️ Aviation Signal Redundancy System
 
-## 📡 Project Overview
-The **Aviation Signal System** is a Python-based simulation project designed to model how aircraft positions can be tracked, visualized, and analyzed to improve aviation safety.
+Overview
 
-This project was built as part of my learning journey in software development and aviation systems engineering. It simulates aircraft positioning, radar-style visualization, and distance-based collision awareness as the foundation for a larger real-time aircraft tracking and safety system.
+The Aviation Signal Redundancy System is a modular Python-based simulation designed to model a backup aircraft tracking mechanism in the event of primary signal loss.
 
-The long-term vision is to expand this into a scalable aviation monitoring solution capable of real-time detection, predictive collision alerts, and integration with airborne and ground-based systems.
+The goal of this project is to simulate a fail-safe aviation monitoring system that detects signal interruptions and activates a secondary fallback broadcasting system to maintain aircraft traceability.
 
----
+This concept addresses real-world aviation challenges where aircraft lose communication signals and become difficult to locate.
 
-## 🎯 Project Objectives
-- Simulate aircraft positions using coordinate systems
-- Visualize aircraft on a radar-style display
-- Calculate distance between aircraft in 2D/3D space
-- Detect potential collision risk based on proximity
-- Build a strong software foundation for future AI and signal integration
-- Prepare for future hardware integration (ADS-B, GPS, SDR modules)
+⸻
 
----
+Problem Statement
 
-## 🛠 Technologies That Will be Used
-- Python 3
-- NumPy (numerical computation)
-- Matplotlib (data visualization / radar simulation)
-- VS Code (development environment)
-- Git (version control)
+In aviation systems, when an aircraft loses primary communication or radar signal, locating the aircraft becomes significantly more difficult.
 
----
+This project simulates:
+	•	Signal monitoring
+	•	Anomaly detection
+	•	Automatic fallback system activation
 
-## 📂 Project Structure
+The system acts as a redundancy layer — similar to how backup generators activate during power failure.
 
-AviationSignalSystem/
-│
-├── main.py              # Main aircraft simulation script
-├── venv/                # Virtual environment (not uploaded to GitHub)
-└── README.md            # Project documentation
+⸻
 
----
+System Architecture
 
-## 🚀 Features That Will be Implemented
-- Aircraft position simulation using coordinate arrays
-- Radar-style visualization of aircraft
-- Distance calculation between aircraft
-- Scalable structure for future feature expansion
+The project is structured using modular design principles.
 
----
+Modules
 
-## ▶️ How you Will Run This Project
+1. signal_monitor.py
+	•	Tracks aircraft signal status
+	•	Simulates signal loss and restoration
+	•	Provides signal state to other components
 
-### 1️⃣ Clone the Repository
-git clone http: In Progress
+2. anomaly_detection.py
+	•	Detects abnormal signal behavior
+	•	Triggers response when signal loss is detected
 
-### 2️⃣ Create and Activate Virtual Environment (Windows)
-python -m venv venv  
-venv\Scripts\activate  
+3. fallback_system.py
+	•	Simulates activation of backup GPS broadcasting
+	•	Represents secondary location transmission system
 
-### 3️⃣ Install Dependencies
-python -m pip install numpy matplotlib  
+4. main.py
+	•	Integrates all modules
+	•	Controls system execution flow
+	•	Simulates signal interruption event
 
-### 4️⃣ Run the Simulation
-python main.py  
+⸻
 
-A radar-style visualization window will appear showing simulated aircraft positions.
+Technologies Used
+	•	Python 3
+	•	Object-Oriented Programming (OOP)
+	•	Modular System Design
+	•	Command Line Execution
 
----
+⸻
 
-## 🧠 What This Project Demonstrates
-- Understanding of coordinate-based system modeling
-- Ability to simulate real-world engineering problems in software
-- Foundational aviation safety logic (distance-based detection)
-- Strong problem-solving and debugging skills
-- Structured project organization using virtual environments
-
----
-
-## 🔮 Future Improvements
-- Real-time aircraft movement simulation
-- 3D altitude modeling
-- Collision risk alert system with visual warnings
-- AI-based trajectory prediction
-- ADS-B signal decoding integration
-- GPS coordinate mapping
-- Ground station and airborne unit simulation
-- Web-based or mobile monitoring dashboard
-
----
-
-## 📌 Why This Project Matters
-Modern aviation safety systems begin with simulation and modeling.  
-This project represents the early-stage engineering foundation of a scalable aircraft detection and awareness system aimed at improving aviation safety and situational awareness.
-
----
-
-LinkedIn:https://www.linkedin.com/in/ke-yonna-bass-b9a0663b3/
-
---- 
-## Project in Progress
---- 
+How to Run the Project
+	1.	Clone the repository:
+     https://github.com/Keyonna99/aviation-signal-system.git
 
 ## 👩🏽‍💻 Author
 Ke’Yonna Bass  
